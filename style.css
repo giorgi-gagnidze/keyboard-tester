@@ -182,6 +182,24 @@ body {
   width: 8rem;
 }
 
+.text {
+  width: 102.4rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.text div {
+  width: 2rem;
+  height: 2rem;
+  background-color: #2596be;
+  border-radius: 1rem;
+}
+
+.text p {
+  font-size: 1.6rem;
+}
+
 .btn-worked {
   background-color: #ffffff;
   color: #000000;
