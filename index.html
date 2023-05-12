@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Keyboard Tester</title>
   </head>
   <body>
     <div class="main-container">
       <div>
-        <div>
+        <div class="container-fn">
           <button id="Escape" class="button">Esc.</button>
-          <button id="F1" class="button">F1</button>
-          <button id="F2" class="button">F2</button>
-          <button id="F3" class="button">F3</button>
-          <button id="F4" class="button">F4</button>
-          <button id="F5" class="button">F5</button>
-          <button id="F6" class="button">F6</button>
-          <button id="F7" class="button">F7</button>
-          <button id="F8" class="button">F8</button>
-          <button id="F9" class="button">F9</button>
-          <button id="F10" class="button">F10</button>
-          <button id="F11" class="button">F11</button>
-          <button id="F12" class="button">F12</button>
+          <div>
+            <button id="F1" class="button">F1</button>
+            <button id="F2" class="button">F2</button>
+            <button id="F3" class="button">F3</button>
+            <button id="F4" class="button">F4</button>
+          </div>
+          <div>
+            <button id="F5" class="button">F5</button>
+            <button id="F6" class="button">F6</button>
+            <button id="F7" class="button">F7</button>
+            <button id="F8" class="button">F8</button>
+          </div>
+          <div>
+            <button id="F9" class="button">F9</button>
+            <button id="F10" class="button">F10</button>
+            <button id="F11" class="button">F11</button>
+            <button id="F12" class="button">F12</button>
+          </div>
         </div>
         <div>
           <button id="Backquote" class="button">`</button>
@@ -40,10 +50,12 @@
           <button id="Minus" class="button">-</button>
           <button id="Equal" class="button">=</button>
           <button id="Backslash" class="button">\</button>
-          <button id="Backspace" class="button">Backspace</button>
+          <button id="Backspace" class="button">
+            <i class="bi bi-arrow-left"></i>
+          </button>
         </div>
         <div>
-          <button id="Tab" class="button">Tab</button>
+          <button id="Tab" class="button tab">Tab</button>
           <button id="KeyQ" class="button">Q</button>
           <button id="KeyW" class="button">W</button>
           <button id="KeyE" class="button">E</button>
@@ -123,7 +135,7 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="num-container-01">
           <button id="NumLock" class="button">Num Lock</button>
           <button id="NumpadDivide" class="button">/</button>
           <button id="NumpadMultiply" class="button">*</button>
@@ -153,6 +165,6 @@
       </div>
     </div>
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>
