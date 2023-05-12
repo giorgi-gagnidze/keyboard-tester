@@ -12,11 +12,8 @@ function test(e) {
   const { code } = e;
   for (let button of id) {
     if (code === button.id) {
-      console.log("match");
-      console.log(button);
       button.classList.add("btn-worked");
       button.classList.add("btn-click");
-      console.log("worked");
 
       // Remove event listeners from the previous button, if it exists
       if (previousButton) {
@@ -62,7 +59,6 @@ function test(e) {
       leftOs.focus();
     }
   }
-  console.log(e);
 }
 
 function onKeyDown(e) {
@@ -70,7 +66,6 @@ function onKeyDown(e) {
   for (let button of id) {
     if (code === button.id) {
       button.classList.add("btn-click");
-      console.log("click");
     }
   }
 
@@ -81,7 +76,6 @@ function onKeyDown(e) {
 const onKeyUp = (e) => {
   const button = e.target;
   button.classList.remove("btn-click");
-  console.log("released");
 };
 
 // Disable keyboard key functions
@@ -101,23 +95,19 @@ document.onkeydown = function (event) {
 // Function for add and remove class to RightOS button
 function addWorkedRight() {
   rightOs.classList.add("btn-click");
-  console.log("pressed");
 }
 
 function removeWorkedRight() {
   rightOs.classList.remove("btn-click");
-  console.log("release");
 }
 
 // Function for add and remove class to LeftOS button
 function addWorkedLeft() {
   leftOs.classList.add("btn-click");
-  console.log("pressed");
 }
 
 function removeWorkedLeft() {
   leftOs.classList.remove("btn-click");
-  console.log("release");
 }
 
 // Test Print Screen key
