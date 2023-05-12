@@ -1,0 +1,11 @@
+.main-container {
+  display: flex;
+}
+
+.btn-worked {
+  background-color: green;
+}
+
+.btn-click {
+  background-color: yellow;
+}
