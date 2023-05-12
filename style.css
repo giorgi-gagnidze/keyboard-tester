@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: lightgray;
+  background-color: #ffffff;
 }
 
 .button {
@@ -20,9 +20,9 @@ body {
   font-size: inherit;
   margin: 0.1rem;
   border-radius: 4px;
-  border: 1px solid lightgray;
-  background-color: #000000;
-  color: lightgray;
+  border: 1px solid #000000;
+  background-color: #2596be;
+  color: #000000;
   font-family: inherit;
 }
 
@@ -31,8 +31,9 @@ body {
   justify-content: space-between;
   width: 102.4rem;
   margin: 5rem auto;
-  background-color: #000000;
+  background-color: #2596be;
   padding: 1rem;
+  border-radius: 4px;
 }
 
 .main-container__inner {
@@ -43,24 +44,41 @@ body {
   justify-content: space-between;
 }
 
-.tab {
-  width: 6rem;
+.container-keyboard__inner {
+  display: flex;
 }
 
-.caps-lock {
-  width: 8.3rem;
+.number-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.two-simbol-key {
+  font-size: 1.4rem;
+}
+
+.backspace {
+  width: 7.6rem;
+}
+
+.alphabet-key {
+  font-size: 1.6rem;
+}
+
+.tab,
 .enter-02 {
-  width: 6.3rem;
+  width: 8rem;
 }
 
+.caps-lock,
 .enter {
-  width: 8.3rem;
+  width: 10rem;
 }
 
 .shift {
-  width: 10.405rem;
+  width: 12.1rem;
 }
 
 .bottom-key {
@@ -68,7 +86,7 @@ body {
 }
 
 .space {
-  width: 19.8rem;
+  width: 20.8rem;
 }
 
 .main-container__inner--middle {
@@ -109,8 +127,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
   border-radius: 4px;
 }
 
@@ -151,12 +169,17 @@ body {
   height: 8rem;
 }
 
+.numpad-period {
+  width: 8rem;
+}
+
 .btn-worked {
-  background-color: lightgray;
+  background-color: #ffffff;
   color: #000000;
+  border: 1px solid #000000;
 }
 
 .btn-click {
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: #e28743;
+  border: 1px solid #000000;
 }
