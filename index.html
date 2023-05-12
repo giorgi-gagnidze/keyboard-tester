@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="main-container">
-      <div>
+      <div class="main-container__inner">
         <div class="container-fn">
           <button id="Escape" class="button">Esc.</button>
           <div>
@@ -68,9 +68,10 @@
           <button id="KeyP" class="button">P</button>
           <button id="BracketLeft" class="button">[</button>
           <button id="BracketRight" class="button">]</button>
+          <button id="Enter02" class="button enter-02">Enter</button>
         </div>
         <div>
-          <button id="CapsLock" class="button">Caps Lock</button>
+          <button id="CapsLock" class="button caps-lock">Caps Lock</button>
           <button id="KeyA" class="button">A</button>
           <button id="KeyS" class="button">S</button>
           <button id="KeyD" class="button">D</button>
@@ -82,10 +83,12 @@
           <button id="KeyL" class="button">L</button>
           <button id="Semicolon" class="button">;</button>
           <button id="Quote" class="button">'</button>
-          <button id="Enter" class="button">Enter</button>
+          <button id="Enter" class="button enter">
+            <i class="bi bi-arrow-return-left"></i>
+          </button>
         </div>
         <div>
-          <button id="ShiftLeft" class="button">Shift</button>
+          <button id="ShiftLeft" class="button shift">Shift</button>
           <button id="KeyZ" class="button">Z</button>
           <button id="KeyX" class="button">X</button>
           <button id="KeyC" class="button">C</button>
@@ -96,71 +99,98 @@
           <button id="Comma" class="button">,</button>
           <button id="Period" class="button">.</button>
           <button id="Slash" class="button">/</button>
-          <button id="ShiftRight" class="button">Shift</button>
+          <button id="ShiftRight" class="button shift">Shift</button>
         </div>
         <div>
-          <button id="ControlLeft" class="button">Ctrl</button>
-          <button id="OSLeft" class="button">OS</button>
-          <button id="AltLeft" class="button">Alt</button>
-          <button id="Space" class="button">&nbsp;</button>
-          <button id="AltRight" class="button">Alt Gr</button>
-          <button id="OSRight" class="button">OS</button>
-          <button id="ContextMenu" class="button">Menu</button>
-          <button id="ControlRight" class="button">Ctrl</button>
+          <button id="ControlLeft" class="button bottom-key">Ctrl</button>
+          <button id="OSLeft" class="button bottom-key">OS</button>
+          <button id="AltLeft" class="button bottom-key">Alt</button>
+          <button id="Space" class="button space">&nbsp;</button>
+          <button id="AltRight" class="button bottom-key">Alt Gr</button>
+          <button id="OSRight" class="button bottom-key">OS</button>
+          <button id="ContextMenu" class="button bottom-key">Menu</button>
+          <button id="ControlRight" class="button bottom-key">Ctrl</button>
         </div>
       </div>
-      <div>
+      <div class="main-container__inner main-container__inner--middle">
         <div>
-          <button id="PrintScreen" class="button">Prt. Sc.</button>
-          <button id="ScrollLock" class="button">Scrl. Lock</button>
-          <button id="Pause" class="button">Pause</button>
-        </div>
-        <div>
-          <button id="Insert" class="button">Insert</button>
-          <button id="Home" class="button">Home</button>
-          <button id="PageUp" class="button">Page Up</button>
-        </div>
-        <div>
-          <button id="Delete" class="button">Delete</button>
-          <button id="End" class="button">End</button>
-          <button id="PageDown" class="button">Page Down</button>
-        </div>
-        <div>
-          <div>
-            <button id="ArrowUp" class="button">Up</button>
+          <div class="middle-container">
+            <button id="PrintScreen" class="button">Prt. Sc.</button>
+            <button id="ScrollLock" class="button">Scrl. Lock</button>
+            <button id="Pause" class="button">Pause</button>
           </div>
-          <button id="ArrowLeft" class="button">Left</button>
-          <button id="ArrowDown" class="button">Down</button>
-          <button id="ArrowRight" class="button">Right</button>
+          <div class="middle-container">
+            <button id="Insert" class="button">Insert</button>
+            <button id="Home" class="button">Home</button>
+            <button id="PageUp" class="button">Page Up</button>
+          </div>
+          <div class="middle-container">
+            <button id="Delete" class="button">Delete</button>
+            <button id="End" class="button">End</button>
+            <button id="PageDown" class="button">Page Down</button>
+          </div>
+        </div>
+        <div>
+          <div class="middle-container middle-container__bottom">
+            <div>
+              <button id="ArrowUp" class="button">Up</button>
+            </div>
+            <div>
+              <button id="ArrowLeft" class="button">Left</button>
+              <button id="ArrowDown" class="button">Down</button>
+              <button id="ArrowRight" class="button">Right</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
+      <div class="main-container__inner">
+        <div class="container-led">
+          <div class="container-led__item">
+            <div class="container-led__item--inner">1</div>
+          </div>
+          <div class="container-led__item">
+            <div class="container-led__item--">
+              <div class="container-led__item--inner">A</div>
+            </div>
+          </div>
+          <div class="container-led__item">
+            <div class="container-led__item--inner">
+              <i class="bi bi-box-arrow-in-down"></i>
+            </div>
+          </div>
+        </div>
         <div class="num-container-01">
           <button id="NumLock" class="button">Num Lock</button>
           <button id="NumpadDivide" class="button">/</button>
           <button id="NumpadMultiply" class="button">*</button>
           <button id="NumpadSubtract" class="button">-</button>
         </div>
-        <div>
-          <button id="Numpad7" class="button">7</button>
-          <button id="Numpad8" class="button">8</button>
-          <button id="Numpad9" class="button">9</button>
-          <button id="NumpadAdd" class="button">+</button>
+        <div class="num-container-02">
+          <div class="num-container-02__inner">
+            <button id="Numpad7" class="button">7</button>
+            <button id="Numpad8" class="button">8</button>
+            <button id="Numpad9" class="button">9</button>
+          </div>
+          <button id="NumpadAdd" class="button plus-key">+</button>
+          <div class="num-container-02__inner">
+            <button id="Numpad4" class="button">4</button>
+            <button id="Numpad5" class="button">5</button>
+            <button id="Numpad6" class="button">6</button>
+          </div>
         </div>
-        <div>
-          <button id="Numpad4" class="button">4</button>
-          <button id="Numpad5" class="button">5</button>
-          <button id="Numpad6" class="button">6</button>
-        </div>
-        <div>
-          <button id="Numpad1" class="button">1</button>
-          <button id="Numpad2" class="button">2</button>
-          <button id="Numpad3" class="button">3</button>
-          <button id="NumpadEnter" class="button">Enter</button>
-        </div>
-        <div>
-          <button id="Numpad0" class="button">0</button>
-          <button id="NumpadDecimal" class="button">.</button>
+        <div class="num-container-03">
+          <div class="num-container-03__inner">
+            <button id="Numpad1" class="button">1</button>
+            <button id="Numpad2" class="button">2</button>
+            <button id="Numpad3" class="button">3</button>
+          </div>
+          <button id="NumpadEnter" class="button enter-key">Enter</button>
+          <div class="num-container-03__inner">
+            <div class="num-container-03__inner">
+              <button id="Numpad0" class="button">0</button>
+              <button id="NumpadDecimal" class="button">.</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -17,6 +17,7 @@ body {
   width: 4rem;
   height: 4rem;
   font-size: inherit;
+  margin: 0.1rem;
 }
 
 .main-container {
@@ -25,6 +26,10 @@ body {
   width: 102.4rem;
   margin: 5rem auto;
   border: 1px solid black;
+  padding: 1rem;
+}
+
+.main-container__inner {
 }
 
 .container-fn {
@@ -33,7 +38,109 @@ body {
 }
 
 .tab {
-  width: 8rem;
+  width: 6rem;
+}
+
+.caps-lock {
+  width: 8.3rem;
+}
+
+.enter-02 {
+  width: 6.3rem;
+}
+
+.enter {
+  width: 8.3rem;
+}
+
+.shift {
+  width: 10.405rem;
+}
+
+.bottom-key {
+  width: 6rem;
+}
+
+.space {
+  width: 19.8rem;
+}
+
+.main-container__inner--middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle-container {
+  display: flex;
+}
+
+.middle-container__bottom {
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-container__bottom div {
+  display: flex;
+}
+
+.container-led {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-led__item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-led__item--inner {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.num-container-01 {
+  display: flex;
+}
+
+.num-container-02 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+
+.num-container-02__inner {
+  display: flex;
+}
+
+.plus-key {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 8rem;
+}
+
+.num-container-03 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.num-container-03__inner {
+  display: flex;
+}
+
+.enter-key {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 8rem;
 }
 
 .btn-worked {
